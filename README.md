@@ -3,7 +3,7 @@
 ### 완성본 미리보기
 ![github-issues-demo](https://user-images.githubusercontent.com/61301574/168082257-fb9202c7-eac8-4c5b-9e10-f6ac40b8032a.gif)
 
-### 배포 링크
+[배포링크 바로가기](https://oyeon-kwon.github.io/github_issues_API/)
 
 ### 프로젝트 실행 방법
 ```
