@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/oyeon/static/css/main.0bf8adff.css",
-    "main.js": "/oyeon/static/js/main.b4510b43.js",
-    "static/media/no_data.png": "/oyeon/static/media/no_data.e32394ce229e88168a90.png",
-    "index.html": "/oyeon/index.html",
-    "main.0bf8adff.css.map": "/oyeon/static/css/main.0bf8adff.css.map",
-    "main.b4510b43.js.map": "/oyeon/static/js/main.b4510b43.js.map"
+    "main.css": "/github_issues_API/static/css/main.0bf8adff.css",
+    "main.js": "/github_issues_API/static/js/main.80f74321.js",
+    "static/media/no_data.png": "/github_issues_API/static/media/no_data.e32394ce229e88168a90.png",
+    "index.html": "/github_issues_API/index.html",
+    "main.0bf8adff.css.map": "/github_issues_API/static/css/main.0bf8adff.css.map",
+    "main.80f74321.js.map": "/github_issues_API/static/js/main.80f74321.js.map"
   },
   "entrypoints": [
     "static/css/main.0bf8adff.css",
-    "static/js/main.b4510b43.js"
+    "static/js/main.80f74321.js"
   ]
 }
