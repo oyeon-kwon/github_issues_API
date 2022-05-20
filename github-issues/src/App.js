@@ -7,8 +7,10 @@ import noData from './no_data.png';
 function App () {
   const [datas, setDatas] = useState([]);
   const [sortDescending, setSortDescending] = useState(true);
+  // TODO: sortDescending은 boolean 값이기 때문에 isDescending 과 같이 직관적인 변수명 사용 필요 -> 비교 연산자 없이 값 평가
 
   if (sortDescending === true) {
+    // ! sort 메소드는 Shallow copy 이기 때문에 원본데이터의 값을 바꾼다. 데이터 자체를 가지고 연산을 해 버리면 불필요한 중복 렌더링이 발생
     datas.sort((a, b) => {
       if (a.comments > b.comments) {
         return -1;
@@ -16,6 +18,7 @@ function App () {
       if (a.comments < b.comments) {
         return 1;
       }
+      // 0 을 리턴하는 것은 비교대상이 동일함을 의미하기 때문에 없어도 되는 코드
       return 0;
     });
   } else if (sortDescending === false) {
@@ -42,6 +45,7 @@ function App () {
       })
       .catch((err) => {
         // API 제공 한도 초과일 경우, 로컬 json 데이터 활용
+        // TODO: err 를 확인해서 해당 err에 맞는 처리 필요
         setDatas(Data);
       });
   }, []);
@@ -64,6 +68,7 @@ function App () {
             {
           datas.map((data, id) => {
             return (
+              // key 값을 index로 주는 것은 지양
               <div className='issue' key={id}>
                 <div className='issue-info'>
                   <div className='number'>issue number  <span className='data'>#{data.number}</span></div>
